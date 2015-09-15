@@ -6,7 +6,7 @@
         <LobSystemInstance Name="Pto" />
       </LobSystemInstances>
       <Entities>
-        <Entity Name="PtoEntity" Namespace="DogFood.Pto" Version="1.0.0.41">
+        <Entity Name="PtoEntity" Namespace="DogFood.Pto" Version="1.0.0.50">
           <Properties>
             <Property Name="Class" Type="System.String">DogFood.Pto.PtoEntityService, Pto</Property>
           </Properties>
@@ -19,7 +19,7 @@
                 <Parameter Name="ptoEntityList" Direction="Return">
                   <TypeDescriptor Name="PtoEntityList" TypeName="System.Collections.Generic.IEnumerable`1[[DogFood.Pto.TimeOff, Pto]]" IsCollection="true">
                     <TypeDescriptors>
-                      <TypeDescriptor Name="PtoEntity" TypeName="System.String">
+                      <TypeDescriptor Name="PtoEntity" TypeName="DogFood.Pto.TimeOff, Pto" IsCollection="false">
                         <TypeDescriptors>
                           <TypeDescriptor Name="EmployeeId" TypeName="System.Int32" IsCollection="false" IdentifierName="EmployeeId" />
                           <TypeDescriptor Name="SickHours" TypeName="System.Double" IsCollection="false" />
@@ -31,7 +31,7 @@
             <Method Name="ReadItem">
               <Parameters>
                 <Parameter Name="ptoEntity" Direction="Return">
-                  <TypeDescriptor Name="PtoEntity" TypeName="System.String">
+                  <TypeDescriptor Name="PtoEntity" TypeName="DogFood.Pto.TimeOff, Pto" IsCollection="false">
                     <TypeDescriptors>
                       <TypeDescriptor Name="EmployeeId" TypeName="System.Int32" IsCollection="false" IdentifierName="EmployeeId" />
                       <TypeDescriptor Name="SickHours" TypeName="System.Double" IsCollection="false" />
