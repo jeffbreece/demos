@@ -8,5 +8,6 @@
     <FeatureProperty Key="IncrementalUpdate" Value="true" />
     <FeatureProperty Key="ModelFileName" Value="$SharePoint.ProjectItem.Name$\Pto.bdcm" />
     <FeatureProperty Key="Pto" Value="BdcAssemblies\$SharePoint.Project.AssemblyFileName$" />
+    <FeatureProperty Key="SiteUrl" Value="http://mcodev" />
   </FeatureProperties>
 </ProjectItem>

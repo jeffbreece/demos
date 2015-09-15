@@ -9,7 +9,7 @@ namespace DogFood.Pto
 
         public static IEnumerable<TimeOff> ReadList()
         {
-            PtoTableDataContext db = new PtoTableDataContext("");
+            PtoTableDataContext db = new PtoTableDataContext(GetConnString());
             var employeePtoData = from e in db.TimeOffs
                               select new TimeOff
                               {
@@ -22,7 +22,23 @@ namespace DogFood.Pto
 
         public static TimeOff ReadItem(int employeeId)
         {
-            throw new System.NotImplementedException();
+            var employeeDbContext = new PtoTableDataContext(GetConnString());
+            TimeOff employee =
+                (from emp in employeeDbContext.TimeOffs
+                 where emp.EmployeeId == employeeId
+                 select emp).Single();
+            return employee;
+        }
+
+        private static string GetConnString()
+        {
+            string connString = string.Empty;
+            using (var userCredentials = SecureStoreProxy.GetCredentialsGetCredentialsFromSecureStoreService("DogFoodKey", SecureStoreProxy.CredentialType.Domain))
+            {
+                // Secure store service must have the SQL user, password and Host/Instance populated for this to return a proper connection string.
+                connString = "Server=" + userCredentials.DomainName + ";Database=DemoDb;User Id=" + userCredentials.UserName + " ;Password=" + userCredentials.Password + ";";
+            }
+            return connString;
         }
     }
 }

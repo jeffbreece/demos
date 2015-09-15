@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Solution xmlns="http://schemas.microsoft.com/sharepoint/" SolutionId="0129d06d-e59f-4032-a16d-ef71751abbaa" SharePointProductVersion="15.0">
+  <Assemblies>
+    <Assembly Location="DogFood.dll" DeploymentTarget="GlobalAssemblyCache" />
+  </Assemblies>
+  <FeatureManifests>
+    <FeatureManifest Location="DogFood_PtoFeature\Feature.xml" />
+  </FeatureManifests>
+</Solution>

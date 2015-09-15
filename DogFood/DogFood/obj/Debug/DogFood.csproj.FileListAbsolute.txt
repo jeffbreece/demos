@@ -1,0 +1,5 @@
+C:\Users\dev\Documents\Projects\demos\DogFood\DogFood\obj\Debug\DogFood.csprojResolveAssemblyReference.cache
+C:\Users\dev\Documents\Projects\demos\DogFood\DogFood\bin\Debug\DogFood.dll
+C:\Users\dev\Documents\Projects\demos\DogFood\DogFood\bin\Debug\DogFood.pdb
+C:\Users\dev\Documents\Projects\demos\DogFood\DogFood\obj\Debug\DogFood.dll
+C:\Users\dev\Documents\Projects\demos\DogFood\DogFood\obj\Debug\DogFood.pdb
