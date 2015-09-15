@@ -6,7 +6,7 @@
         <LobSystemInstance Name="Pto" />
       </LobSystemInstances>
       <Entities>
-        <Entity Name="PtoEntity" Namespace="DogFood.Pto" Version="1.0.0.19">
+        <Entity Name="PtoEntity" Namespace="DogFood.Pto" Version="1.0.0.41">
           <Properties>
             <Property Name="Class" Type="System.String">DogFood.Pto.PtoEntityService, Pto</Property>
           </Properties>
@@ -23,7 +23,7 @@
                         <TypeDescriptors>
                           <TypeDescriptor Name="EmployeeId" TypeName="System.Int32" IsCollection="false" IdentifierName="EmployeeId" />
                           <TypeDescriptor Name="SickHours" TypeName="System.Double" IsCollection="false" />
-                          <TypeDescriptor Name="TimeOff" TypeName="System.Double" IsCollection="false" /></TypeDescriptors></TypeDescriptor></TypeDescriptors></TypeDescriptor></Parameter>
+                          <TypeDescriptor Name="PtoHours" TypeName="System.Double" IsCollection="false" /></TypeDescriptors></TypeDescriptor></TypeDescriptors></TypeDescriptor></Parameter>
               </Parameters>
               <MethodInstances>
                 <MethodInstance Name="ReadList" Type="Finder" ReturnParameterName="ptoEntityList" ReturnTypeDescriptorPath="PtoEntityList" />
@@ -31,18 +31,20 @@
             <Method Name="ReadItem">
               <Parameters>
                 <Parameter Name="ptoEntity" Direction="Return">
-                  <TypeDescriptor Name="PtoEntity" TypeName="DogFood.Pto.TimeOff, Pto" IsCollection="false">
+                  <TypeDescriptor Name="PtoEntity" TypeName="System.String">
                     <TypeDescriptors>
-                      <TypeDescriptor Name="EmployeeId" IsCollection="false" TypeName="System.Int32" IdentifierName="EmployeeId" />
-                      <TypeDescriptor Name="SickHours" IsCollection="false" TypeName="System.Double" />
-                      <TypeDescriptor Name="TimeOff" IsCollection="false" TypeName="System.Double" /></TypeDescriptors></TypeDescriptor></Parameter>
+                      <TypeDescriptor Name="EmployeeId" TypeName="System.Int32" IsCollection="false" IdentifierName="EmployeeId" />
+                      <TypeDescriptor Name="SickHours" TypeName="System.Double" IsCollection="false" />
+                      <TypeDescriptor Name="PtoHours" TypeName="System.Double" IsCollection="false" /></TypeDescriptors></TypeDescriptor>
+                  </Parameter>
                 <Parameter Name="employeeId" Direction="In">
                   <TypeDescriptor Name="EmployeeId" TypeName="System.Int32" IdentifierEntityName="PtoEntity" IdentifierEntityNamespace="DogFood.Pto" IdentifierName="EmployeeId" /></Parameter>
               </Parameters>
               <MethodInstances>
-                <MethodInstance Name="ReadItem" Type="SpecificFinder" ReturnParameterName="ptoEntity" ReturnTypeDescriptorPath="PtoEntity" />
+                <MethodInstance Name="ReadItem" Type="SpecificFinder" ReturnParameterName="ptoEntity" />
               </MethodInstances></Method>
-          </Methods></Entity>
+          </Methods>
+          </Entity>
       </Entities>
     </LobSystem>
   </LobSystems>

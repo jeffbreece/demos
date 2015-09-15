@@ -9,25 +9,21 @@ namespace DogFood.Pto
 
         public static IEnumerable<TimeOff> ReadList()
         {
-            PtoTableDataContext db = new PtoTableDataContext(GetConnString());
-            var employeePtoData = from e in db.TimeOffs
-                              select new TimeOff
-                              {
-                                  EmployeeId = e.EmployeeId,
-                                  SickHours = e.SickHours,
-                                  PtoHours = e.PtoHours
-                              };
-            return employeePtoData;
+            var db = new PtoTableDataContext(GetConnString());
+            IEnumerable<TimeOff> timeOffList = from t in db.TimeOffs
+                                                        select t;
+
+            return timeOffList;
         }
 
         public static TimeOff ReadItem(int employeeId)
         {
-            var employeeDbContext = new PtoTableDataContext(GetConnString());
-            TimeOff employee =
-                (from emp in employeeDbContext.TimeOffs
-                 where emp.EmployeeId == employeeId
-                 select emp).Single();
-            return employee;
+            var db = new PtoTableDataContext(GetConnString());
+            TimeOff toRecord =
+                (from to in db.TimeOffs
+                 where to.EmployeeId == employeeId
+                 select to).Single();
+            return toRecord;
         }
 
         private static string GetConnString()
