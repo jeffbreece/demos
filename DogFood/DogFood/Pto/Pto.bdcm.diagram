@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<minimalLanguageDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Pto">
+  <modelRootMoniker Name="/Pto" />
+  <nestedChildShapes>
+    <entityShape Id="6bf3496c-b410-4c73-b9ec-4ee001feaf2b" absoluteBounds="4, 1.625, 1.5, 1.59568359375">
+      <entityMoniker name="DogFood.Pto.PtoEntity" />
+      <nestedChildShapes>
+        <elementListCompartment Id="d9c23844-7fc4-41d5-82f3-85a2b194f4cc" absoluteBounds="4.015, 2.035, 1.4700000000000002, 0.44169108072916663" name="Identifiers" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="eba43dd8-2271-4350-ba5b-f291c753cb32" absoluteBounds="4.015, 2.4866910807291669, 1.4700000000000002, 0.63399251302083326" name="Methods" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+  </nestedChildShapes>
+</minimalLanguageDiagram>
