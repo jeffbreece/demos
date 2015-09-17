@@ -1,9 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?><Database Name="DemoDb" Class="PtoTableDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
-  <Table Name="dbo.TimeOff" Member="TimeOffs">
-    <Type Name="TimeOff">
-      <Column Name="EmployeeId" Type="System.Int32" DbType="Int NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
-      <Column Name="SickHours" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-      <Column Name="PtoHours" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
-    </Type>
-  </Table>
-</Database>

@@ -1,6 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="0129d06d-e59f-4032-a16d-ef71751abbaa" solutionId="0129d06d-e59f-4032-a16d-ef71751abbaa" resetWebServer="false" sharePointProductVersion="15.0" name="DogFood" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
-  <features>
-    <featureReference itemId="0a40ee43-7c93-4224-bace-e1a385eea612" />
-  </features>
-</package>

@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Model xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://schemas.microsoft.com/windows/2007/BusinessDataCatalog" Name="EmployeeDataBdc">
+  <LobSystems>
+    <LobSystem Name="EmployeeDataBdc" Type="DotNetAssembly">
+      <LobSystemInstances>
+        <LobSystemInstance Name="EmployeeDataBdc" />
+      </LobSystemInstances>
+      <Entities>
+        <Entity Name="EmployeeTimeOff" Namespace="BuckeyeSpugBdc.EmployeeDataBdc" Version="1.0.0.18">
+          <Properties>
+            <Property Name="Class" Type="System.String">BuckeyeSpugBdc.EmployeeDataBdc.EmployeeTimeOffService, EmployeeDataBdc</Property>
+          </Properties>
+          <Identifiers>
+            <Identifier Name="EmployeeId" TypeName="System.Int32" />
+          </Identifiers>
+          <Methods>
+            <Method Name="ReadList">
+              <Parameters>
+                <Parameter Name="employeeTimeOffList" Direction="Return">
+                  <TypeDescriptor Name="EmployeeTimeOffList" TypeName="System.Collections.Generic.IEnumerable`1[[BuckeyeSpugBdc.EmployeeDataBdc.TimeOff, EmployeeDataBdc]]" IsCollection="true">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="EmployeeTimeOff" TypeName="BuckeyeSpugBdc.EmployeeDataBdc.TimeOff, EmployeeDataBdc" IsCollection="false">
+                        <TypeDescriptors>
+                          <TypeDescriptor Name="EmployeeId" TypeName="System.Int32" IsCollection="false" IdentifierName="EmployeeId" />
+                          <TypeDescriptor Name="SickHours" TypeName="System.Double" IsCollection="false" />
+                          <TypeDescriptor Name="PtoHours" TypeName="System.Double" IsCollection="false" /></TypeDescriptors></TypeDescriptor></TypeDescriptors></TypeDescriptor></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Name="ReadList" Type="Finder" ReturnParameterName="employeeTimeOffList" ReturnTypeDescriptorPath="EmployeeTimeOffList" />
+              </MethodInstances></Method>
+            <Method Name="ReadItem">
+              <Parameters>
+                <Parameter Name="employeeTimeOff" Direction="Return">
+                  <TypeDescriptor Name="EmployeeTimeOff" IsCollection="false" TypeName="BuckeyeSpugBdc.EmployeeDataBdc.TimeOff, EmployeeDataBdc">
+                    <TypeDescriptors>
+                      <TypeDescriptor Name="EmployeeId" IdentifierName="EmployeeId" IsCollection="false" TypeName="System.Int32" />
+                      <TypeDescriptor Name="SickHours" IsCollection="false" TypeName="System.Double" />
+                      <TypeDescriptor Name="PtoHours" IsCollection="false" TypeName="System.Double" /></TypeDescriptors></TypeDescriptor></Parameter>
+                <Parameter Name="employeeId" Direction="In">
+                  <TypeDescriptor Name="EmployeeId" TypeName="System.Int32" IdentifierEntityName="EmployeeTimeOff" IdentifierEntityNamespace="BuckeyeSpugBdc.EmployeeDataBdc" IdentifierName="EmployeeId" /></Parameter>
+              </Parameters>
+              <MethodInstances>
+                <MethodInstance Name="ReadItem" Type="SpecificFinder" ReturnParameterName="employeeTimeOff" ReturnTypeDescriptorPath="EmployeeTimeOff" />
+              </MethodInstances></Method>
+          </Methods></Entity>
+      </Entities>
+    </LobSystem>
+  </LobSystems>
+</Model>

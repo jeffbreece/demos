@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<minimalLanguageDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="EmployeeDataBdc">
+  <modelRootMoniker Name="/EmployeeDataBdc" />
+  <nestedChildShapes>
+    <entityShape Id="6a6cbf98-5857-4e25-9a57-5b56b0f3ce32" absoluteBounds="1.125, 1.125, 1.75, 1.59568359375">
+      <entityMoniker name="BuckeyeSpugBdc.EmployeeDataBdc.EmployeeTimeOff" />
+      <nestedChildShapes>
+        <elementListCompartment Id="08d513f7-340a-439e-a3b1-70d9049a9862" absoluteBounds="1.14, 1.5350000000000001, 1.7200000000000002, 0.44169108072916663" name="Identifiers" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="6e61a55b-0117-4d3f-8531-db66b5ac3b28" absoluteBounds="1.14, 1.9866910807291667, 1.7200000000000002, 0.63399251302083326" name="Methods" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </entityShape>
+  </nestedChildShapes>
+</minimalLanguageDiagram>

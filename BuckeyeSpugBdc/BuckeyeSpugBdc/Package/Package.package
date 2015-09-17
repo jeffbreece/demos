@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="e477984c-e8ce-4306-abf6-0782fc240dba" solutionId="e477984c-e8ce-4306-abf6-0782fc240dba" resetWebServer="false" sharePointProductVersion="15.0" name="BuckeyeSpugBdc" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="e3af3562-0eb4-43fe-9f05-89e56fd4ce20" />
+  </features>
+</package>

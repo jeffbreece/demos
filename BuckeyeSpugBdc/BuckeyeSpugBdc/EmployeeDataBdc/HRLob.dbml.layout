@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="HRLob">
+  <DataContextMoniker Name="/HRLobDataContext" />
+  <nestedChildShapes>
+    <classShape Id="62b1ab24-7a98-4ff9-ac5e-af1ac693121b" absoluteBounds="1.625, 0.75, 2, 1.3862939453125">
+      <DataClassMoniker Name="/HRLobDataContext/TimeOff" />
+      <nestedChildShapes>
+        <elementListCompartment Id="5a860f53-08c3-401e-93a4-63b7ce06fb77" absoluteBounds="1.6400000000000001, 1.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
