@@ -1,0 +1,23 @@
+Notes from the session:
+
+	If using server side code then create a proxy class following this MSDN article.
+	“SharePoint: Retrieving Credentials from the Secure Store Application using C#,” Matthew Yarlett 
+	http://social.technet.microsoft.com/wiki/contents/articles/20110.sharepoint-retrieving-credentials-from-the-secure-store-application-using-c.aspx
+	
+
+	Remember SPD has limitations but it's a good tool when your O365 job does not include BCS Meta Man by Lightning Tools.
+	BCS Meta Man: http://lightningtools.com/products/bcs-meta-man-2010-and-2013/
+
+	Using External Content Types as External Lists is fantastic with JavaScript work for SharePoint hosted apps using the standard REST List Web services in SharePoint.
+	https://msdn.microsoft.com/en-us/library/office/fp142380.aspx
+
+	Always create a Limit Filter.
+
+	Always use well structured DAL classes with Primary Keys when creating these BDC data models in SharePoint... otherwise it won't work. (AS400 lessons learned there).
+
+Contact Info
+
+	Twitter: jbreece33
+	Web: http://jeffbreece.com
+	GitHub: https://github.com/jeffbreece/demos/tree/master/BuckeyeSpugBdc
+	Email: jeff@jeffbreece.com
